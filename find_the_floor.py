@@ -6,3 +6,6 @@ def find_floor(directions: str):
 		elif dir == ")":
 			floor -= 1
 	return floor
+
+def find_floor2(directions:str):
+	return sum(map(lambda d: 1 if d == "(" else -1, directions))
